@@ -1,5 +1,9 @@
 # GetPokemon
 
+## Options
+
+To change the run options, edit the file `options.py` in the `/utils` directory.
+
 ## FAQ
 
 ### What does GetPokemon do?
