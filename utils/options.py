@@ -13,4 +13,4 @@ apiURLs = {
     "descriptionURL": "https://pokeapi.co/api/v2/pokemon-species/"
 }
 bootMessage = 'Initializing...\n'
-terminationMessage = 'Fuck right off'
+terminationMessage = 'Execution Complete'

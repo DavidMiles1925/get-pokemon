@@ -21,4 +21,10 @@ See the our installation instructions (section: coming soon)
 
 ## Resources
 
+**PokeAPI documentation:**
 [PokeApi](https://pokeapi.co/)
+
+## Dependencies
+
+**Pillow:**
+`python -m pip install pillow`

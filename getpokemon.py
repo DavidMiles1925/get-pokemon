@@ -4,15 +4,13 @@ import modules.writePokemon
 import modules.getRequests
 import requests
 import time
-import PIL
-
 
 # UTILITY FUNCTIONS
 ######################################################
 
 
 def displayEstimatedRunTime():
-    estRunTimeAdjuster = 1.6
+    estRunTimeAdjuster = 1.4
 
     estRunTime = ((utils.options.apiWaitTime *
                   utils.options.pokemonToBeQueried) * estRunTimeAdjuster)
@@ -44,13 +42,15 @@ def buildFile(dataPoke, dataDesc, dataRegion):
     pokemonName = dataPoke['name']
     fout.write('{\n')
 
-    print('Writing: ', pokemonName.capitalize(), '\n')
+    print(f'Writing: {pokemonName.capitalize()}')
 
     modules.writePokemon.writeNameNumber(dataPoke, fout)
     modules.writePokemon.writeRegion(dataRegion, fout)
     modules.writePokemon.writeTypes(dataPoke, fout)
     modules.writePokemon.writeHeightWeight(dataPoke, fout)
     modules.writePokemon.writeDescription(dataDesc, fout)
+
+    modules.getRequests.getSpriteData(dataPoke)
 
     fout.write("},\n")
 
