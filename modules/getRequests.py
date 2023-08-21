@@ -1,5 +1,7 @@
 import requests
 import utils.options
+from PIL import Image
+from io import BytesIO
 
 # GET REQUESTS
 ######################################################
@@ -32,9 +34,14 @@ def getRegionData(dataDesc):
     return dataRegion
 
 
-def getSpriteData(pokeNumber, dataPoke):
-    spriteURL = dataPoke['sprite']['front_default']
-    filename = f'{pokeNumber}.jpg'
+def getSpriteData(dataPoke):
+    spriteURL = dataPoke['sprites']['front_default']
+    number = str(dataPoke['id'])
+    filename = f'{number}.jpg'
 
     resSprite = requests.get(spriteURL)
     dataSprite = resSprite.content
+
+    image = Image.open(BytesIO(dataSprite)).convert('RGB')
+    image.save(filename, "JPEG")
+    print(f"Image saved as {filename}\n")
