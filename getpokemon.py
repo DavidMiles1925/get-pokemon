@@ -29,7 +29,13 @@ def displayTerminate(time_start):
     time_stop = time.perf_counter()
     time_total = time_stop - time_start
 
-    print('Total run time: ', time_total, ' seconds.\n')
+    if time_total > utils.constants.SECONDS_IN_A_MINUTE:
+        time_total = time_total / utils.constants.SECONDS_IN_A_MINUTE
+        unit = 'minutes'
+    else:
+        unit = 'seconds'
+
+    print(f'Total run time: {time_total} {unit}\n')
     print(utils.options.terminationMessage)
     input('Press any key...')
 

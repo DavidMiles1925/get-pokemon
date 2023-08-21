@@ -1,10 +1,10 @@
 # OPTIONS
 ######################################################
 
-startingPoint = 1  # The first pokemon number to be queried
-pokemonToBeQueried = 10  # The number of pokemon to be queried.
-writeMode = "w"  # # To write a new file each time:    "w"
-#                  # To append exiting file:           "wa"
+startingPoint = 1           # The first pokemon number to be queried
+pokemonToBeQueried = 1008   # The number of pokemon to be queried.
+writeMode = "w"             # To write a new file each time:    "w"
+#                           # To append exiting file:           "wa"
 filename = 'poke_data.json'
 
 apiWaitTime = 1
