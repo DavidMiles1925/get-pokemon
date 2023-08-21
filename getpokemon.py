@@ -1,9 +1,10 @@
+import utils.options
+import utils.constants
+import modules.writePokemon
+import modules.getRequests
 import requests
 import time
-import modules.getRequests
-import modules.writePokemon
-import utils.constants
-import utils.options
+import PIL
 
 
 # UTILITY FUNCTIONS

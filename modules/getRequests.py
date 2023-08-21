@@ -30,3 +30,11 @@ def getRegionData(dataDesc):
     dataRegion = resRegion.json()
 
     return dataRegion
+
+
+def getSpriteData(pokeNumber, dataPoke):
+    spriteURL = dataPoke['sprite']['front_default']
+    filename = f'{pokeNumber}.jpg'
+
+    resSprite = requests.get(spriteURL)
+    dataSprite = resSprite.content
