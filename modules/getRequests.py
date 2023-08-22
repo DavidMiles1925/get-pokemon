@@ -3,7 +3,8 @@ import utils.options
 from PIL import Image
 from io import BytesIO
 
-# GET REQUESTS
+
+# GET POKEMON REQUESTS
 ######################################################
 
 
@@ -45,3 +46,14 @@ def getSpriteData(dataPoke):
     image = Image.open(BytesIO(dataSprite)).convert('RGB')
     image.save(filename, "JPEG")
     print(f"Image saved as {filename}\n")
+
+# GET TYPE REQUESTS
+######################################################
+
+
+def getTypeData(number):
+    number = str(number)
+    typesURL = utils.options.apiURLs['typesURL'] + number
+    resTypes = requests.get(typesURL)
+    dataTypes = resTypes.json()
+    return dataTypes
