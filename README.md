@@ -17,7 +17,7 @@ This code is used to buid a custom JSON file by pulling data from PokeAPI.
 
 ### How do I use GetPokemon?
 
-See the installation instructions at the top of this document.
+See the installation instructions in the documentation below.
 
 ## Documetation
 
