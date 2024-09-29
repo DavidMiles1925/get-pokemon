@@ -6,7 +6,21 @@ Now, I have made many improvements to make the program usable by anyone who find
 
 ## Installation
 
+**Prerequisites**
+
 - You will need Git installed. [Git Installation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+- You will need `requests` installed
+
+```bash
+pip install requests
+```
+
+- You will need `Pillow` installed
+
+```bash
+pip install Pillow
+```
 
 1. In your terminal, navigate to the directory where you would like GetPokemon to live.
 2. Clone the git repository and enter the directory with these commands:

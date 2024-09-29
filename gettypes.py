@@ -44,8 +44,8 @@ def writeFile(dataTypes):
     fout.write(f'\t"half_damage_from": {half_damage_from},\n')
     fout.write(f'\t"no_damage_from": {no_damage_from},\n')
     fout.write(f'\t"double_damage_to": {double_damage_to},\n')
-    fout.write(f'\t"half_damage_from": {half_damage_to},\n')
-    fout.write(f'\t"no_damage_from": {no_damage_from},\n')
+    fout.write(f'\t"half_damage_to": {half_damage_to},\n')
+    fout.write(f'\t"no_damage_to": {no_damage_to},\n')
     fout.write('\t}\n')
     fout.write("},\n")
 
