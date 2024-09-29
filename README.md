@@ -4,7 +4,24 @@ GetPokemon was initially created to gather data for an app that delivers a rando
 
 Now, I have made many improvements to make the program usable by anyone who finds a need for it.
 
-## Installation
+## FAQ
+
+### What does GetPokemon do?
+
+This code is used to buid a custom JSON file by pulling data from PokeAPI.
+
+### Why do I need GetPokemon? (use cases)
+
+- Building your own file means easier access to the data you want. PokeAPI is a great resource, but it can be hard to navigate for beginners.
+- Build a JSON file to reference while your app is offline.
+
+### How do I use GetPokemon?
+
+See the installation instructions at the top of this document.
+
+## Documetation
+
+### Installation
 
 **Prerequisites**
 
@@ -39,23 +56,6 @@ python GetPokemon.py
 
 \*NOTE: Depending on your operating system this command may look slightly different. Google how to run a python script for your operating system if necessary.
 
-## FAQ
-
-### What does GetPokemon do?
-
-This code is used to buid a custom JSON file by pulling data from PokeAPI.
-
-### Why do I need GetPokemon? (use cases)
-
-- Building your own file means easier access to the data you want. PokeAPI is a great resource, but it can be hard to navigate for beginners.
-- Build a JSON file to reference while your app is offline.
-
-### How do I use GetPokemon?
-
-See the installation instructions at the top of this document.
-
-## Documetation
-
 ### Options
 
 To change the run options, edit the file `options.py` in the `/utils` directory.
@@ -64,8 +64,3 @@ To change the run options, edit the file `options.py` in the `/utils` directory.
 
 **PokeAPI documentation:**
 [PokeApi](https://pokeapi.co/)
-
-### Dependencies
-
-**Pillow:**
-`python -m pip install pillow`
