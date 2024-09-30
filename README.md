@@ -33,22 +33,10 @@ See the installation instructions in the documentation below.
 pip install requests
 ```
 
-OR
-
-```bash
- python.exe -m pip install --upgrade pip
-```
-
 - You will need `Pillow` installed
 
 ```bash
 pip install Pillow
-```
-
-OR
-
-```bash
-python.exe -m pip install --upgrade pip
 ```
 
 1. **Navigate to the directory:** In your terminal, navigate to the directory where you would like GetPokemon to live.
@@ -76,3 +64,15 @@ To change the run options, edit the file `options.py` in the `/utils` directory.
 
 **PokeAPI documentation:**
 [PokeApi](https://pokeapi.co/)
+
+### Troubleshooting
+
+#### Program crashing when running from Windows environment, but works in IDE:
+
+I found that updating `pip` helped:
+
+```bash
+ python.exe -m pip install --upgrade pip
+```
+
+Re-run installation for `request` and `Pillow0`.
