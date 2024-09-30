@@ -33,25 +33,37 @@ See the installation instructions in the documentation below.
 pip install requests
 ```
 
+OR
+
+```bash
+ python.exe -m pip install --upgrade pip
+```
+
 - You will need `Pillow` installed
 
 ```bash
 pip install Pillow
 ```
 
-1. In your terminal, navigate to the directory where you would like GetPokemon to live.
-2. Clone the git repository and enter the directory with these commands:
+OR
+
+```bash
+python.exe -m pip install --upgrade pip
+```
+
+1. **Navigate to the directory:** In your terminal, navigate to the directory where you would like GetPokemon to live.
+2. **Clone the git repository** and enter the directory with these commands:
 
 ```bash
 git clone https://github.com/DavidMiles1925/get-pokemon.git
 cd get-pokemon
 ```
 
-3. Adjust the options in `\utils\options.py`.
-4. Run the program with this command:
+3. **Adjust the options** in `\utils\options.py`.
+4. **Run the program** with this command:
 
 ```bash
-python GetPokemon.py
+python getpokemon.py
 ```
 
 \*NOTE: Depending on your operating system this command may look slightly different. Google how to run a python script for your operating system if necessary.

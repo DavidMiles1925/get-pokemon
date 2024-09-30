@@ -1,12 +1,12 @@
 # OPTIONS
 ######################################################
 
-startingPoint = 1           # The first pokemon number to be queried
-pokemonToBeQueried = 150   # The number of pokemon to be queried.
+startingPoint = 152           # The first pokemon number to be queried
+pokemonToBeQueried = 100   # The number of pokemon to be queried.
 writeMode = "w"             # To overwite existing file:        "w"
 #                           # To append exiting file:           "wa"
-filename = 'poke_data2.json'
-filename_types = 'poke_types2.json'
+filename = 'johto.json'
+filename_types = 'johto_types.json'
 
 apiWaitTime = 0.2
 apiURLs = {
@@ -22,7 +22,7 @@ terminationMessage = 'Execution Complete'
 ######################################################
 
 dataOptionsDict = {
-    'pokemonImage': 'n',
+    'pokemonImage': 'y',
     'pokemonRegion': 'y',
     'pokemonDescription': 'y'
 }
