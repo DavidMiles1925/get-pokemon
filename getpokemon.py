@@ -112,17 +112,22 @@ def requestLoop():
 
 
 if __name__ == "__main__":
-    time_start = time.perf_counter()
+    try:
+        time_start = time.perf_counter()
 
-    print(bootMessage)
-    displayEstimatedRunTime()
+        print(bootMessage)
+        displayEstimatedRunTime()
 
-    rangeEnd = startingPoint + pokemonToBeQueried
+        rangeEnd = startingPoint + pokemonToBeQueried
 
-    fname = filename
-    fout = open(fname, writeMode, encoding='utf-8')
+        fname = filename
+        fout = open(fname, writeMode, encoding='utf-8')
 
-    requestLoop()
+        requestLoop()
 
-    fout.close()
-    displayTerminate(time_start)
+        fout.close()
+        displayTerminate(time_start)
+        
+    except Exception as e:
+        print(e)
+        time.sleep(5)

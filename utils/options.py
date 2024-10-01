@@ -1,12 +1,12 @@
 # OPTIONS
 ######################################################
 
-startingPoint = 152           # The first pokemon number to be queried
-pokemonToBeQueried = 100   # The number of pokemon to be queried.
+startingPoint = 1           # The first pokemon number to be queried
+pokemonToBeQueried = 151   # The number of pokemon to be queried.
 writeMode = "w"             # To overwite existing file:        "w"
 #                           # To append exiting file:           "wa"
-filename = 'johto.json'
-filename_types = 'johto_types.json'
+filename = 'kanto.json'
+filename_types = 'kanto_types.json'
 
 apiWaitTime = 0.2
 apiURLs = {
